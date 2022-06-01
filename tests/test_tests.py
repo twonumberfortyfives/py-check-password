@@ -131,6 +131,6 @@ def test_should_check_special_symbols(monkeypatch):
 
     test_result = pytest.main(["app/test_main.py"])
     assert test_result.value == 1, (
-        "Tests should check that 'check_password' returns False for passwords without digits"
+        "Tests should check that 'check_password' returns False for passwords without special symbols"
     )
 
