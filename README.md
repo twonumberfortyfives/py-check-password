@@ -16,7 +16,12 @@ or special character from `$@#&!-_`;
 
 Examples:
 ```python
-check_password('Pass@word1') == True
-check_password('qwerty') == False
-check_password('Str@ng') == False
+check_password('Pass@word1') is True
+check_password('qwerty') is False
+check_password('Str@ng') is False
 ```
+
+Run `pytest app/` to check if function pass your tests.
+
+Run `pytest --numprocesses=auto tests/` to check if your tests cover all boundary conditions
+and pass task tests.
